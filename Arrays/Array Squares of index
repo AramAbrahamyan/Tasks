@@ -1,0 +1,30 @@
+using System;
+namespace MyProgramm
+{
+    class SquaresOfIndex
+    {
+        static void Main()
+        {
+            int[] arr = new int[5];
+            for(int i = 0; i < arr.Length; i++)
+            {
+                Console.Write($"[{i}] = ");
+                arr[i] = Int32.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Your numbers in array:");
+            foreach (int i in arr)
+            {
+                Console.WriteLine(i);
+            }
+            for(int i = 0; i < arr.Length; i++)
+            {
+                arr[i] *= arr[i];
+            }
+            Console.WriteLine("Squares of Index");
+            foreach(int i in arr)
+            {
+                Console.WriteLine(i);
+            }
+        }
+    }
+}
