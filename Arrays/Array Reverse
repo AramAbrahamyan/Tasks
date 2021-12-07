@@ -1,4 +1,4 @@
-1.Generate an array of 20 keyboard integers, and display the elements of the array in reverse order.
+1.Generate an array of 10 keyboard integers, and display the elements of the array in reverse order.
 using System;
 namespace MyProgramm
 {
@@ -6,7 +6,7 @@ namespace MyProgramm
     {
         static void Main()
         {
-            int[] arr = new int[20];
+            int[] arr = new int[10];
             int i,j = 0;
             for(i = 0; i < arr.Length; i++)
             {
